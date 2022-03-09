@@ -100,6 +100,7 @@ class HomeController extends Controller
         $applyLeave->type = $request->type;
         $applyLeave->from_date = $request->from_date;
         $applyLeave->to_date = $request->to_date;
+        $applyLeave->remarks = $request->remarks;
         $applyLeave->leaves = $leave;
         $applyLeave->save();
 
